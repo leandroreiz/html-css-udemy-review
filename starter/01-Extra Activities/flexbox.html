@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leandro's Burger</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+      .product {
+        border: 1px solid black;
+        width: 800px;
+        margin: 50px auto;
+        display: flex;
+      }
+
+      .product-image {
+        width: 350px;
+      }
+
+      .product-details {
+        padding: 10px;
+      }
+
+      .product-price {
+        color: #fff;
+        background-color: rgb(0, 0, 0);
+        font-weight: bold;
+        font-size: 24px;
+        writing-mode: vertical-rl;
+        text-align: center;
+      }
+
+      .hashtag {
+        color: #fff;
+        font-size: 10px;
+        border-radius: 100px;
+        padding: 2px 10px;
+        text-transform: uppercase;
+      }
+
+      .gordo {
+        background-color: dodgerblue;
+        display: inline-block;
+        margin-left: 20px;
+      }
+
+      .junkfood {
+        background-color: forestgreen;
+        display: inline-block;
+        margin-left: 5px;
+      }
+
+      .product-title {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .product-description {
+        margin-bottom: 20px;
+      }
+
+      .product-spec-list {
+        list-style: none;
+        font-weight: bold;
+        display: flex;
+        gap: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <article class="product">
+      <!-- IMAGE -->
+      <img src="img/burger.png" alt="burger image" class="product-image" />
+      <!-- DETAILS -->
+      <div class="product-details">
+        <div class="product-title">
+          <h2 class="product-name">Enhanced Big Mac</h2>
+          <div class="hashtag gordo">#gordo</div>
+          <div class="hashtag junkfood">#junkfood</div>
+        </div>
+
+        <p class="product-description">
+          Alface, queijo, molho especial, cebola, picles, pão com gergelim.
+        </p>
+
+        <ul class="product-spec-list">
+          <li class="product-spec-list-item">🍔 Over 9000 kcal</li>
+          <li class="product-spec-list-item">⏰ 30 Minutes</li>
+          <li class="product-spec-list-item">⭐ 6/5</li>
+        </ul>
+      </div>
+      <!-- PRICE -->
+      <p class="product-price">R$68,99</p>
+    </article>
+  </body>
+</html>
