@@ -16,6 +16,11 @@ body {
   width: 825px;
   margin: 50px auto;
   position: relative;
+  display: grid;
+  grid-template-columns: 236px 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  align-items: center;
+  column-gap: 30px;
 }
 
 .product-title {
@@ -24,6 +29,7 @@ body {
   text-transform: uppercase;
   background-color: #f7f7f7;
   padding: 15px 0;
+  grid-column: 1 / -1;
 }
 
 .product-title::after {
@@ -47,6 +53,17 @@ body {
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.product-description {
+  margin-bottom: 15px;
 }
 
 .more-info {
@@ -131,6 +148,7 @@ body {
   padding: 15px;
   width: 100%;
   border-top: 4px solid black;
+  grid-column: 1 / -1;
 }
 
 .btn-add-cart:hover {
@@ -138,7 +156,7 @@ body {
   background-color: white;
 }
 
-/* FLEXBOX */
+/* FLEXBOX
 .flex-container {
   display: flex;
   gap: 40px;
@@ -161,10 +179,7 @@ body {
   margin-bottom: 20px;
 }
 
-.product-description {
-  margin-bottom: 15px;
-}
-
+*/
 /* 
 /* FLOAT LAYOUT
 .product-image {
