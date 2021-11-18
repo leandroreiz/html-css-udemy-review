@@ -14,9 +14,11 @@
 
 - LINE HEIGHTS
   
-  Default: 1
-  Smaller: 1.05
-  Paragraph Default: 1.2, 1.6
+  Html Default: 1
+  Small: 1.05
+  Paragraph Default: 1.2
+  Medium: 1.6
+  Large: 1.8
 
 - LETTER SPACING (px)
 
@@ -233,6 +235,7 @@ strong {
 
 .list-item {
   font-size: 1.8rem;
+  line-height: 1.2;
   display: flex;
   align-items: center;
   gap: 1.6rem;
