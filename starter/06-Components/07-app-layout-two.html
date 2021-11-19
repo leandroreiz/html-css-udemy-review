@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App Layout - No Help Version</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        height: 100vh; /* should be on body, not in the email section */
+
+        display: grid;
+        grid-template-columns: 80px 300px 1fr 200px;
+        grid-template-rows: 80px 1fr;
+      }
+
+      nav,
+      section,
+      main,
+      aside {
+        padding-top: 24px;
+      }
+
+      nav {
+        background-color: #343a40;
+        color: #fff;
+        grid-row: 1 / -1;
+      }
+
+      menu {
+        background-color: #fa5252;
+        grid-column: 2 / -1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        padding: 0 40px;
+      }
+
+      .btn {
+        font-size: 16px;
+        font-weight: bold;
+        background-color: #e03131;
+        color: #fff;
+        padding: 8px 12px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .btn:last-child {
+        margin-left: auto;
+        background-color: #0c8599;
+      }
+
+      section {
+        background-color: #f8f9fa;
+        padding: 40px;
+        overflow: scroll;
+
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      section::-webkit-scrollbar {
+        display: none;
+      }
+
+      aside {
+        background-color: #f8f9fa;
+      }
+
+      .email {
+        background-color: #adb5bd;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <menu>
+      <button class="btn">New</button>
+      <button class="btn">Reply</button>
+      <button class="btn">Forward</button>
+      <button class="btn">Mark Unread</button>
+      <button class="btn">Trash</button>
+    </menu>
+    <nav>Nav</nav>
+    <section>
+      <div class="email">Email 1</div>
+      <div class="email">Email 2</div>
+      <div class="email">Email 3</div>
+      <div class="email">Email 4</div>
+      <div class="email">Email 5</div>
+      <div class="email">Email 6</div>
+      <div class="email">Email 7</div>
+      <div class="email">Email 8</div>
+      <div class="email">Email 9</div>
+      <div class="email">Email 10</div>
+    </section>
+    <main>Email View</main>
+    <aside>Additional Info</aside>
+  </body>
+</html>
